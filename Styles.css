@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+img.proPic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 47%);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    list-style: none;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+p{
+    color: white;
+}
+
+button{
+    padding: 10px 30px;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 15px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 47%);
+    color: aliceblue;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+button:hover{
+    transform: scale(120%);
+    background: black;
+    box-shadow: 0 10px 15px 0 rgb(255, 255, 255);
+}
+
+.Paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Adjust this value to increase or decrease the space */
+    text-align: end;
+    justify-content: end;
+}
+
+h1.name{
+    transition: all 0.9s ease;
+}
+
+h1.name:hover{
+    transform: scale(160%);
+    color: darkred;
+}
+
+main{
+    max-width: 1650px;
+}
+
+img.BatmanPng{
+    width: 1450px;
+    height: 1100px;
+}
+
+h2{
+    color: white;
+}
+
+
+.bottomPage{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 215px 520px;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}
+
+/*customizing cards and containers*/
+.name2{
+    display: flex;
+    color: white;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    /* Adjust margin to create space between cards */
+    margin: 8px 15px 1px 0;
+    display: flex;
+    flex-direction: column; /* Adjust to column layout */
+    justify-content: space-between; /* Vertically distribute content */
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.card a{
+    color: black; /* Set the color of the link */
+    text-decoration: none; /* Remove underline */
+}
+
+.card:hover{
+    transform: scale(1.2);
+    height: 400px;
+    box-shadow: 0 10px 15px 0 rgb(255, 255, 255);
+}
+
+.content{
+    padding: 10px 10px;
+}
+
+.content:hover{
+    top: 150px;
+    height: 400px;
+}
+
+.textContent{
+    display: none;
+}
+
+.card:hover .textContent{
+    display: block;
+    color: black;
+    font-size: 11px;
+}
