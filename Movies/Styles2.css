@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+img.proPic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 47%);
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav{
+    list-style: none;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+p{
+    color: white;
+}
+
+button{
+    padding: 10px 30px;
+    font-family: "Share Tech Mono", monospace;
+    font-size: 15px;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 47%);
+    color: aliceblue;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+button:hover{
+    transform: scale(120%);
+    background: black;
+    box-shadow: 0 10px 15px 0 rgb(255, 255, 255);
+}
+
+.Paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Adjust this value to increase or decrease the space */
+    text-align: end;
+    justify-content: end;
+}
+
+h1.name{
+    transition: all 0.9s ease;
+}
+
+h1.name:hover{
+    transform: scale(160%);
+    color: darkred;
+}
+
+h1.name2{
+    color: white;
+}
+
+main{
+    max-width: 1650px;
+}
+
+
+.BatmanPng{
+    width: 350px;
+    margin-right: 50px;
+    position: absolute;
+    top: 300px;
+    right: 1450px;
+    z-index: 1; /* Ensure the PNG is above the cards */
+}
+
+/*customizing cards*/
+.card{
+    box-shadow: 0 4px 8px 0 rgba(150, 150, 150);
+    width: calc(33.33% - 125px);
+    height: 370px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.5s;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.card a{
+    color: black; /* Set the color of the link */
+    text-decoration: none; /* Remove underline */
+}
+
+.card:hover {
+    box-shadow: 0 10px 15px 0 rgb(255, 255, 255);
+    scale: 120%;
+}
+
+.container {
+    width: calc(100% - 400px);
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding: 5px 5px;
+    position: absolute;
+    top: 790px;
+    right: 0;
+}
+
+.moviName{
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 30px;
+}
+
+.video {
+    display: flex;
+    position: absolute;
+    top: 490px;
+    right: 300px;
+}
+
+
